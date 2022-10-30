@@ -55,18 +55,18 @@
 // // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
 
-Console.WriteLine("Введите число: ");
+// Console.WriteLine("Введите число: ");
 
-int num = Convert.ToInt32(Console.ReadLine());
+// int num = Convert.ToInt32(Console.ReadLine());
 
-if (num % 2 == 1)
-{
-    Console.WriteLine("Число " + num + " является: НЕЧЕТНЫМ");
-}
-else
-{
-    Console.WriteLine("число " + num + " является: ЧЕТНЫМ");
-}
+// if (num % 2 == 1)
+// {
+//     Console.WriteLine("Число " + num + " является: НЕЧЕТНЫМ");
+// }
+// else
+// {
+//     Console.WriteLine("число " + num + " является: ЧЕТНЫМ");
+// }
 
 
 
@@ -76,3 +76,17 @@ else
 
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
+
+// Console.WriteLine("Введите числа: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int i = 1;
+
+// Console.WriteLine("Четные число от 1 до " + num);
+// while (i <= num)
+// {
+//     if (i % 2 != 1)
+//     {
+//         Console.Write(i + ", ");
+//     }
+//     i = i + 1;
+// }
