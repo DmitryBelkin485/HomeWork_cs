@@ -74,3 +74,37 @@
 // }
 // Console.WriteLine((number.Length > 2 ? $"Третья цифра числа: {number[2]}" : "Без третьей цифры"));
 // //_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+
+
+
+
+// Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+
+Console.Clear();
+
+Console.WriteLine("Введите день недели от 1 до 7: ");
+int day = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(WorkWeek(day));
+
+
+string WorkWeek(int a)                        // string WorkHoliday(int day) 
+{
+    if (a > 0 && a < 8)                          //   if (day > 0 && day < 8) 
+    {
+        if (a == 6 || a == 7)                    //       if (day == 6 || day == 7)
+        {
+            Console.Write($"Ура, {a} это выходной");
+        }
+        else
+        {
+            Console.Write($"Жаль, но, {a} это рабочий");
+        }
+    }
+    else
+    {
+        Console.Write("Вы ввели число не в пределах от 1 до 7, поэтому не возможно определить");
+    }
+    return " день! ";
+}
