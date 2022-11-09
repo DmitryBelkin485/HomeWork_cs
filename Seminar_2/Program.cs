@@ -36,10 +36,27 @@
 // }
 //_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-
-
-
 // // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+
+// Console.WriteLine("Введите номер: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// if (Math.Abs(number) > 99)
+// {
+//     while (Math.Abs(number) > 999)
+//     {
+//         number = number / 10;
+//     }
+//     int thirdNum = number % 10;
+//     Console.WriteLine(thirdNum);
+// }
+// else
+// {
+//     Console.WriteLine("Третьей цифры нет в числе");
+// }
+
+// // Другой вариант решения._ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
 // Console.Clear();
 // Console.Write("Введите 3х значное число: ");
 // string number = Console.ReadLine();
