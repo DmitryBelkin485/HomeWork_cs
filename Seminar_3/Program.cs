@@ -41,19 +41,19 @@
 
 Console.Clear();
 
-int x1 = ReadInt("Введите координату X первой точки: ");
-int y1 = ReadInt("Введите координату Y первой точки: ");
-int z1 = ReadInt("Введите координату Z первой точки: ");
-int x2 = ReadInt("Введите координату X второй точки: ");
-int y2 = ReadInt("Введите координату Y второй точки: ");
-int z2 = ReadInt("Введите координату Z второй точки: ");
+int x1 = ReadInt("Enter the X coordinate of the first point: ");
+int y1 = ReadInt("Enter the Y coordinate of the first point: ");
+int z1 = ReadInt("Enter the Z coordinate of the first point: ");
+int x2 = ReadInt("Enter the X coordinate of the first point: ");
+int y2 = ReadInt("Enter the Y coordinate of the first point: ");
+int z2 = ReadInt("Enter the Z coordinate of the first point: ");
 
 int A = x2 - x1;
 int B = y2 - y1;
 int C = z1 - z2;
 
 double length = Math.Sqrt(A * A + B * B + C * C);
-Console.WriteLine($"Длинна отрезка {length}");
+Console.WriteLine($"Cut length {length}");
 
 int ReadInt(string info)
 {
@@ -84,7 +84,7 @@ Console.WriteLine(Math.Round(length, 2));
 //     }
 //     else
 //     {
-//         Console.WriteLine("Введите число больше 1");
+//         Console.WriteLine("enter a number greater than 1");
 //     }
 // }
 // Console.WriteLine("enter number: ");
