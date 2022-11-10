@@ -35,9 +35,9 @@
 
 // Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 
-// A (3,6,8); B (2,1,-7), -> 15.84
+// A (3,6,8); B (2,1, -7), -> 15.84
 
-// A (7,-5, 0); B (1,-1,9) -> 11.53
+// A (7,-5, 0); B (1,-1, 9) -> 11.53
 
 Console.Clear();
 
@@ -55,18 +55,13 @@ int C = z1 - z2;
 double length = Math.Sqrt(A * A + B * B + C * C);
 Console.WriteLine($"Длинна отрезка {length}");
 
-
-int ReadInt(string message)
+int ReadInt(string info)
 {
-    Console.Write(message);
+    Console.Write(info);
     return Convert.ToInt32(Console.ReadLine());
 }
 
-Console.WriteLine(Math.Round(length,2));
-
-
-
-
+Console.WriteLine(Math.Round(length, 2));
 
 
 
