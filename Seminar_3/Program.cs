@@ -52,8 +52,8 @@ int A = x2 - x1;
 int B = y2 - y1;
 int C = z1 - z2;
 
-double length = Math.Sqrt(A * A + B * B + C * C);
-Console.WriteLine($"Cut length {length}");
+double Length = Math.Sqrt(A * A + B * B + C * C);
+Console.WriteLine($"Cut length {Length}");
 
 int ReadInt(string info)
 {
@@ -61,7 +61,7 @@ int ReadInt(string info)
     return Convert.ToInt32(Console.ReadLine());
 }
 
-Console.WriteLine(Math.Round(length, 2));
+Console.WriteLine(Math.Round(Length, 2));
 
 
 
@@ -69,7 +69,7 @@ Console.WriteLine(Math.Round(length, 2));
 // Задача 23: Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 // 5 -> 1,8,27,64,125
 
-// void sqrt(int N)
+// void Sqrt(int N)
 // {
 //     if (N > 0)
 //     {
@@ -89,5 +89,5 @@ Console.WriteLine(Math.Round(length, 2));
 // }
 // Console.WriteLine("enter number: ");
 // int N = Convert.ToInt32(Console.ReadLine());
-// sqrt(N);
+// Sqrt(N);
 
