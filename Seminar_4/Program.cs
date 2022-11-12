@@ -6,8 +6,18 @@
 
 // 2, 4 -> 16
 
+Console.Clear();
+Console.Write("enter number A: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("enter number B: ");
+int b = Convert.ToInt32(Console.ReadLine());
+int Degree = a;
 
-
+for (int i = 1; i < b; i++)
+{
+    Degree = Degree * a;
+}
+Console.WriteLine("A to degree B equals: " + Degree);
 
 
 
@@ -50,6 +60,6 @@
 
 // 6, 1, 33 -> [6, 1, 33]
 
-Console.Clear();
-int[] array = { 1, 23, 345, 6789, 1011, 2011, 2033, 78 };
-Console.WriteLine($"[{String.Join(",", array)}]");
+// Console.Clear();
+// int[] array = { 1, 23, 345, 6789, 1011, 2011, 2033, 78 };
+// Console.WriteLine($"[{String.Join(",", array)}]");
