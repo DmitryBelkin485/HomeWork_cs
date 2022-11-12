@@ -27,29 +27,18 @@
 
 // 9012 -> 12
 
-Console.Clear();
-int sum = 0;
-Console.Write("Enter number: ");
-String num = Console.ReadLine();
-for (int i = 0; i < num.Length; i++)
-{
-    string str;
-    str = Convert.ToString(num[i]);
-    int number = int.Parse(str);
-    sum += number;
-}
-Console.WriteLine($"sum= {sum}");
-
-
-
-
-
-
-
-
-
-
-
+// Console.Clear();
+// int sum = 0;
+// Console.Write("Enter number: ");
+// String num = Console.ReadLine();
+// for (int i = 0; i < num.Length; i++)
+// {
+//     string str;
+//     str = Convert.ToString(num[i]);
+//     int number = int.Parse(str);
+//     sum += number;
+// }
+// Console.WriteLine($"sum= {sum}");
 
 
 
@@ -60,3 +49,7 @@ Console.WriteLine($"sum= {sum}");
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 
 // 6, 1, 33 -> [6, 1, 33]
+
+Console.Clear();
+int[] array = { 1, 23, 345, 6789, 1011, 2011, 2033, 78 };
+Console.WriteLine($"[{String.Join(",", array)}]");
