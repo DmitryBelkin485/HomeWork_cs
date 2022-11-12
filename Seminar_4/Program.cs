@@ -17,7 +17,7 @@ for (int i = 1; i < b; i++)
 {
     Degree = Degree * a;
 }
-Console.WriteLine("A to degree B equals: " + Degree);
+Console.WriteLine($"A to degree B equals: {Degree} ");
 
 
 
