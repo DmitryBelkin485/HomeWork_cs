@@ -6,24 +6,18 @@
 
 // 2, 4 -> 16
 
-Console.Clear();
-Console.Write("enter number A: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("enter number B: ");
-int b = Convert.ToInt32(Console.ReadLine());
-int Degree = a;
+// Console.Clear();
+// Console.Write("enter number A: ");
+// int numA = Convert.ToInt32(Console.ReadLine());
+// Console.Write("enter number B: ");
+// int numB = Convert.ToInt32(Console.ReadLine());
+// int Degree = numA;
 
-for (int i = 1; i < b; i++)
-{
-    Degree = Degree * a;
-}
-Console.WriteLine($"A to degree B equals: {Degree} ");
-
-
-
-
-
-
+// for (int i = 1; i < numB; i++)
+// {
+//     Degree *= numA;
+// }
+// Console.WriteLine($"A to degree B equals: {Degree} ");
 
 
 
