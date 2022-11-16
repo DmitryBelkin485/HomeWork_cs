@@ -43,7 +43,23 @@
 //     sum += number;
 // }
 // Console.WriteLine($"sum= {sum}");
+// // _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
+// Console.Clear();
+// Console.Write("Enter number: ");
+// int num = int.Parse(Console.ReadLine());
+// Console.WriteLine($"sum of digits = {GetSumNums(num)}");
+
+// int GetSumNums(int number)
+// {
+//     int sum = 0;
+//     while (number > 0)      // 256 % 10 = 25,6 -> 6 >>> 25 % 10 = 2,5 -> 5 >>>  2 % 10 = 2 >>> result 2 +5 + 6 = 13 !!! 
+//     {
+//         sum += number % 10; //sum = sum + number % 10;
+//         number /= 10;       //number = number / 10;
+//     }
+//     return sum;
+// }
 
 
 
@@ -57,3 +73,18 @@
 // Console.Clear();
 // int[] array = { 1, 23, 345, 6789, 1011, 2011, 2033, 78 };
 // Console.WriteLine($"[{String.Join(",", array)}]");
+// // _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+Console.Clear();
+int[] array = GetRandomArray(8, 0, 100);
+Console.WriteLine($"[{String.Join(",", array)}]");
+
+int[] GetRandomArray(int size, int minValue, int maxValue)
+{
+    int[] result = new int[size];
+    for (int i = 0; i < size; i++)
+    {
+        result[i] = new Random().Next(minValue, maxValue);
+    }
+    return result;
+}
