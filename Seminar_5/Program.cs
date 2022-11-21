@@ -36,37 +36,37 @@
 // Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 
 
-Console.Clear();
+// Console.Clear();
 
-Console.Write("Enter the size of the array: ");
-int size = int.Parse(Console.ReadLine());
-int[] numbers = new int[size];
-FillArrayRandomNumbers(numbers);
-Console.Write("Array: ");
-PrintArray(numbers);
-int sum = 0;
+// Console.Write("Enter the size of the array: ");
+// int size = int.Parse(Console.ReadLine());
+// int[] numbers = new int[size];
+// FillArrayRandomNumbers(numbers);
+// Console.Write("Array: ");
+// PrintArray(numbers);
+// int sum = 0;
 
-for (int i = 0; i < numbers.Length; i += 2)
-    sum += numbers[i];
-Console.Write($"total {numbers.Length} numbers, sum of elements in odd positions= {sum}");
+// for (int i = 0; i < numbers.Length; i += 2)
+//     sum += numbers[i];
+// Console.Write($"total {numbers.Length} numbers, sum of elements in odd positions= {sum}");
 
-void FillArrayRandomNumbers(int[] numbers)
-{
-    for (int i = 0; i < numbers.Length; i++)
-    {
-        numbers[i] = new Random().Next(1, 10);
-    }
-}
-void PrintArray(int[] numbers)
-{
+// void FillArrayRandomNumbers(int[] numbers)
+// {
+//     for (int i = 0; i < numbers.Length; i++)
+//     {
+//         numbers[i] = new Random().Next(1, 10);
+//     }
+// }
+// void PrintArray(int[] numbers)
+// {
 
-    Console.Write("[");
-    for (int i = 0; i < numbers.Length; i++)
-    {
-        Console.Write($"{numbers[i]} ");
-    }
-    Console.WriteLine("]");
-}
+//     Console.Write("[");
+//     for (int i = 0; i < numbers.Length; i++)
+//     {
+//         Console.Write($"{numbers[i]} ");
+//     }
+//     Console.WriteLine("]");
+// }
 
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементами массива.
 // [3 7 22 2 78] -> 76
