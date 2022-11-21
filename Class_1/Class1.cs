@@ -6,3 +6,4 @@ public class Class1
         return a + b;
     }
 }
+ 
