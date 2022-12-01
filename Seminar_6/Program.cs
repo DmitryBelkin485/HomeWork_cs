@@ -53,23 +53,23 @@
 // // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; 0,5)
 // var: объявление переменной не определенно типа(Наткнулся решил попробовать ) (Мы говорим компилятору, чтобы он подобрал тип самостоятельно при компиляции.)
 
-Console.Clear();
+// Console.Clear();
 
-Console.Write("Введите b1: ");
-var b1 = double.Parse(Console.ReadLine()); //Convert.ToDouble(Console.ReadLine())  //int double b1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите k1: ");
-var k1 = double.Parse(Console.ReadLine()); //Convert.ToDouble(Console.ReadLine())  //int double k1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите b2: ");
-var b2 = double.Parse(Console.ReadLine()); //Convert.ToDouble(Console.ReadLine())  //int double b2 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите k2: ");
-var k2 = double.Parse(Console.ReadLine()); //Convert.ToDouble(Console.ReadLine())  //int double k2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите b1: ");
+// var b1 = double.Parse(Console.ReadLine()); //Convert.ToDouble(Console.ReadLine())  //int double b1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите k1: ");
+// var k1 = double.Parse(Console.ReadLine()); //Convert.ToDouble(Console.ReadLine())  //int double k1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите b2: ");
+// var b2 = double.Parse(Console.ReadLine()); //Convert.ToDouble(Console.ReadLine())  //int double b2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите k2: ");
+// var k2 = double.Parse(Console.ReadLine()); //Convert.ToDouble(Console.ReadLine())  //int double k2 = Convert.ToInt32(Console.ReadLine());
 
-var x = (-b2 + b1)/(-k1 + k2);
-var y = k2 * x + b2;
+// var x = (b1 - b2)/(k2 - k1);
+// var y = k1 * x + b1;
 
-x = Math.Round(x, 3);
-y = Math.Round(y, 3);
+// x = Math.Round(x, 3);
+// y = Math.Round(y, 3);
 
-Console.WriteLine($"Две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
+// Console.WriteLine($"Две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
 
 
