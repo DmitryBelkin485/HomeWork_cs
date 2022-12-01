@@ -40,43 +40,96 @@
 
 
 // // Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
+// Console.Clear();
+
+// Console.Write("Введите индекс строки: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите индекс столбца: ");
+// int colums = Convert.ToInt32(Console.ReadLine());
+// int[,] numbers = new int[6, 8];
+// FillArray(numbers);
+// PrintArray(numbers);
+
+// if (rows < numbers.GetLength(0) && colums < numbers.GetLength(1))
+// {
+//     Console.WriteLine(numbers[rows, colums]);
+// }
+// else Console.WriteLine($"{rows}{colums} -> такого числа в массиве нет");
+
+// void FillArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             array[i, j] = new Random().Next(1, 11);
+//         }
+//     }
+// }
+
+// void PrintArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i, j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+//     Console.WriteLine();
+// }
+
+
+// // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 Console.Clear();
 
-Console.Write("Введите индекс строки: ");
-int rows = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите индекс столбца: ");
-int colums = Convert.ToInt32(Console.ReadLine());
-int[,] numbers = new int[6, 8];
-FillArray2D(numbers);
-PrintArray2D(numbers);
+Console.Write("введите количество строк: ");
+int n = int.Parse(Console.ReadLine());
+Console.Write("введите количество столбцов: ");
+int m = int.Parse(Console.ReadLine());
 
-if (rows < numbers.GetLength(0) && colums < numbers.GetLength(1))
+int[,] numbers = new int[n, m];
+FillArrayRandomNumbers(numbers);
+
+
+for (int j = 0; j < numbers.GetLength(1); j++)
 {
-    Console.WriteLine(numbers[rows, colums]);
+    double avarage = 0;
+    for (int i = 0; i < numbers.GetLength(0); i++)
+    {
+        avarage = (avarage + numbers[i, j]);
+    }
+    avarage = avarage / n;
+    Console.Write(avarage + "; ");
 }
-else Console.WriteLine($"{rows}{colums} -> такого числа в массиве нет");
+Console.WriteLine();
+PrintArray(numbers);
 
-void FillArray(int[,] array)
+
+
+void FillArrayRandomNumbers(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = new Random().Next(1, 11);
+            array[i, j] = new Random().Next(0, 10);
         }
     }
 }
 
 void PrintArray(int[,] array)
 {
+
     for (int i = 0; i < array.GetLength(0); i++)
     {
+        Console.Write("[ ");
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write(array[i, j] + " ");
+            Console.Write($"{array[i ,j]}  ");
         }
+        Console.Write("]");
         Console.WriteLine();
     }
-    Console.WriteLine();
 }
-
