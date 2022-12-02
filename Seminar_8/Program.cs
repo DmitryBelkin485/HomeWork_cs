@@ -1,6 +1,6 @@
 ﻿// // //Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
 // // //Например, задан массив:
-Console.Clear();
+// Console.Clear();
 
 // int[,] table = new int[3, 4];
 // FillArrayRandom(table);
@@ -206,39 +206,87 @@ Console.Clear();
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
 
-int[,,] array3D = new int[2, 2, 2];
-FillArray(array3D);
-PrintIndex(array3D);
+// int[,,] array3D = new int[2, 2, 2];
+// FillArray(array3D);
+// PrintIndex(array3D);
 
 
 
-void PrintIndex(int[,,] array)
-{
-    for (int i = 0; i < array3D.GetLength(0); i++)
-    {
-        for (int j = 0; j < array3D.GetLength(1); j++)
-        {
-            Console.WriteLine();
-            for (int k = 0; k < array3D.GetLength(2); k++)
-            {
-                Console.Write($"{array3D[i, j, k]}({i},{j},{k}) ");
-            }
-        }
-    }
-}
+// void PrintIndex(int[,,] array)
+// {
+//     for (int i = 0; i < array3D.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array3D.GetLength(1); j++)
+//         {
+//             Console.WriteLine();
+//             for (int k = 0; k < array3D.GetLength(2); k++)
+//             {
+//                 Console.Write($"{array3D[i, j, k]}({i},{j},{k}) ");
+//             }
+//         }
+//     }
+// }
 
-void FillArray(int[,,] array)
-{
-    int count = 10;
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            for (int k = 0; k < array.GetLength(2); k++)
-            {
-                array[i, j, k] += count;
-                count += 3;
-            }
-        }
-    }
-}
+// void FillArray(int[,,] array)
+// {
+//     int count = 10;
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             for (int k = 0; k < array.GetLength(2); k++)
+//             {
+//                 array[i, j, k] += count;
+//                 count += 3;
+//             }
+//         }
+//     }
+// }
+
+// Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
+// Например, на выходе получается вот такой массив:
+// 01 02 03 04
+// 12 13 14 05
+// 11 16 15 06
+// 10 09 08 07
+// Console.Clear();
+
+// Console.WriteLine("Введите размер массива");
+// int len = Convert.ToInt32(Console.ReadLine());
+// int[,] table = new int[len, len];
+// FillArraySpiral(table, len);
+// PrintArray(table);
+
+// void FillArraySpiral(int[,] array, int number)
+// {
+//     int i = 0, j = 0;
+//     int value = 1;
+//     for (int e = 0; e < number * number; e++)
+//     {
+//         int k = 0;
+//         do { array[i, j++] = value++; } while (++k < number - 1);
+//         for (k = 0; k < number - 1; k++) array[i++, j] = value++;
+//         for (k = 0; k < number - 1; k++) array[i, j--] = value++;
+//         for (k = 0; k < number - 1; k++) array[i--, j] = value++;
+//         ++i; ++j;
+//         number = number < 2 ? 0 : number - 2;
+//     }
+// }
+
+// void PrintArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             if (array[i, j] < 10)
+//             {
+//                 Console.Write($"{"0" + array[i, j]}");
+//                 Console.Write(" ");
+//             }
+//             else Console.Write($"{array[i, j]} ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
